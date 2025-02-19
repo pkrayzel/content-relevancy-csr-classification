@@ -11,4 +11,4 @@ datasets
 scikit-learn
 transformers[torch]
 sentence-transformers
-# pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+bs4
