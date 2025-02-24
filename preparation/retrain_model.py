@@ -34,8 +34,8 @@ test_dataset = Dataset.from_pandas(test_df)
 # ----------------------------
 # 🛠️ Step 3: Load Tokenizer & Model (From Existing Fine-Tuned Model)
 # ----------------------------
-tokenizer = DistilBertTokenizer.from_pretrained("fine_tuned_distilbert_v2")
-model = DistilBertForSequenceClassification.from_pretrained("fine_tuned_distilbert_v2")
+tokenizer = DistilBertTokenizer.from_pretrained("fine_tuned_distilbert")
+model = DistilBertForSequenceClassification.from_pretrained("fine_tuned_distilbert")
 
 # ----------------------------
 # 🔍 Step 4: Tokenize Dataset
@@ -109,10 +109,10 @@ trainer.train()
 # ----------------------------
 # 💾 Step 8: Save Retrained Model
 # ----------------------------
-model.save_pretrained("fine_tuned_distilbert_v3")
-tokenizer.save_pretrained("fine_tuned_distilbert_v3")
+model.save_pretrained("fine_tuned_distilbert_v2")
+tokenizer.save_pretrained("fine_tuned_distilbert_v2")
 
-print("\n✅ Retrained model and tokenizer saved to 'fine_tuned_distilbert_v3'")
+print("\n✅ Retrained model and tokenizer saved to 'fine_tuned_distilbert_v2'")
 
 # ----------------------------
 # 🔍 Step 9: Evaluate on Test Dataset
