@@ -35,6 +35,9 @@ eval_f1: 1.0
 
 The final model
 ```
-
+eval_accuracy: 0.9756
+eval_precision: 0.9771
+eval_recall: 0.9697
+eval_f1: 0.9734
 ```
 
